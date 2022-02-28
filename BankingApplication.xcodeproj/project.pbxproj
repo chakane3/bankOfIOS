@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946231F827CCDE6000C82009 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946231F727CCDE6000C82009 /* NetworkServices.swift */; };
 		94F8CC4F27CAFE69004D5AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */; };
 		94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */; };
 		94F8CC5327CAFE69004D5AD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5227CAFE69004D5AD5 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		946231F727CCDE6000C82009 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		94F8CC4B27CAFE69004D5AD5 /* BankingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		946231F627CCDE3800C82009 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				946231F727CCDE6000C82009 /* NetworkServices.swift */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
 		94F8CC4227CAFE69004D5AD5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		94F8CC4D27CAFE69004D5AD5 /* BankingApplication */ = {
 			isa = PBXGroup;
 			children = (
+				946231F627CCDE3800C82009 /* Network Services */,
 				94F8CC7F27CB2BCE004D5AD5 /* Views */,
 				94F8CC7E27CB2BB4004D5AD5 /* Supporting Files */,
 				94F8CC5C27CAFE6A004D5AD5 /* Info.plist */,
@@ -276,6 +287,7 @@
 			files = (
 				94F8CC5327CAFE69004D5AD5 /* ViewController.swift in Sources */,
 				94F8CC4F27CAFE69004D5AD5 /* AppDelegate.swift in Sources */,
+				946231F827CCDE6000C82009 /* NetworkServices.swift in Sources */,
 				94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
