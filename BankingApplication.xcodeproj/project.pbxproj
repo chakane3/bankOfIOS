@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		946231F827CCDE6000C82009 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946231F727CCDE6000C82009 /* NetworkServices.swift */; };
+		946231FB27CCDF0C00C82009 /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946231FA27CCDF0C00C82009 /* BankModel.swift */; };
+		946231FD27CCE89000C82009 /* bankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946231FC27CCE89000C82009 /* bankAPI.swift */; };
+		9462320327CD9EDA00C82009 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462320227CD9EDA00C82009 /* CreateAccount.swift */; };
 		94F8CC4F27CAFE69004D5AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */; };
 		94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */; };
-		94F8CC5327CAFE69004D5AD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5227CAFE69004D5AD5 /* ViewController.swift */; };
+		94F8CC5327CAFE69004D5AD5 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5227CAFE69004D5AD5 /* SignupView.swift */; };
 		94F8CC5627CAFE69004D5AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8CC5427CAFE69004D5AD5 /* Main.storyboard */; };
 		94F8CC5827CAFE6A004D5AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F8CC5727CAFE6A004D5AD5 /* Assets.xcassets */; };
 		94F8CC5B27CAFE6A004D5AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8CC5927CAFE6A004D5AD5 /* LaunchScreen.storyboard */; };
@@ -38,10 +41,13 @@
 
 /* Begin PBXFileReference section */
 		946231F727CCDE6000C82009 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		946231FA27CCDF0C00C82009 /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		946231FC27CCE89000C82009 /* bankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankAPI.swift; sourceTree = "<group>"; };
+		9462320227CD9EDA00C82009 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		94F8CC4B27CAFE69004D5AD5 /* BankingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94F8CC5227CAFE69004D5AD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94F8CC5227CAFE69004D5AD5 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		94F8CC5527CAFE69004D5AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94F8CC5727CAFE6A004D5AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94F8CC5A27CAFE6A004D5AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,8 +88,25 @@
 			isa = PBXGroup;
 			children = (
 				946231F727CCDE6000C82009 /* NetworkServices.swift */,
+				946231FC27CCE89000C82009 /* bankAPI.swift */,
 			);
 			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		946231F927CCDEED00C82009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				946231FA27CCDF0C00C82009 /* BankModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		946231FE27CD9EA300C82009 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9462320227CD9EDA00C82009 /* CreateAccount.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		94F8CC4227CAFE69004D5AD5 = {
@@ -109,6 +132,8 @@
 		94F8CC4D27CAFE69004D5AD5 /* BankingApplication */ = {
 			isa = PBXGroup;
 			children = (
+				946231FE27CD9EA300C82009 /* Controllers */,
+				946231F927CCDEED00C82009 /* Models */,
 				946231F627CCDE3800C82009 /* Network Services */,
 				94F8CC7F27CB2BCE004D5AD5 /* Views */,
 				94F8CC7E27CB2BB4004D5AD5 /* Supporting Files */,
@@ -149,7 +174,7 @@
 		94F8CC7F27CB2BCE004D5AD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				94F8CC5227CAFE69004D5AD5 /* ViewController.swift */,
+				94F8CC5227CAFE69004D5AD5 /* SignupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,8 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F8CC5327CAFE69004D5AD5 /* ViewController.swift in Sources */,
+				946231FD27CCE89000C82009 /* bankAPI.swift in Sources */,
+				94F8CC5327CAFE69004D5AD5 /* SignupView.swift in Sources */,
+				946231FB27CCDF0C00C82009 /* BankModel.swift in Sources */,
 				94F8CC4F27CAFE69004D5AD5 /* AppDelegate.swift in Sources */,
+				9462320327CD9EDA00C82009 /* CreateAccount.swift in Sources */,
 				946231F827CCDE6000C82009 /* NetworkServices.swift in Sources */,
 				94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */,
 			);
