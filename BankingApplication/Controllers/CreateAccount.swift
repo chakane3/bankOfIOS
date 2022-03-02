@@ -40,17 +40,14 @@ class CreateAccount: UIViewController {
                                amount: "0.00")
         dump(newUser)
         
-        bankAPI.createNewUser(postUser: newUser) { [weak self] (result) in
+        bankAPI.createNewUser(postUser: newUser) { (result) in
             switch result {
             case .failure(let appError):
               print("appError \(appError)")
             case .success:
               print("new user created")
             }
-            
         }
-        
-
     }
     
     func generateAccountNumber() -> Int {
