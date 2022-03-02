@@ -11,7 +11,7 @@
         <!--Signup View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignupView" customModule="BankingApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignupView" customModule="BankingApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+            <point key="canvasLocation" x="35" y="106"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="XRw-ym-77S">
@@ -111,6 +111,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Create Account" titleAlignment="center"/>
                                 <connections>
                                     <action selector="createAccountBtn:" destination="YAa-LY-kEZ" eventType="touchUpInside" id="oMe-4K-M6e"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="cr9-au-2CV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-vJ-WoB">
