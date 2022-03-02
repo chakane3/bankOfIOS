@@ -10,14 +10,14 @@
 - user should be able to take out funds from their account
 
 
-user: 
-id SERIAL PK 
-Fname
-Lname
-email
-password
-debitAccountNumber 
-dollarAmountInAccounts
+user: <br>
+id SERIAL PK <br>
+Fname<br>
+Lname<br>
+email<br>
+password<br>
+debitAccountNumber <br>
+dollarAmountInAccounts<br>
 
 p1: setup api endpoint for user creation ✅
     setup ios signup page into next view
