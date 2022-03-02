@@ -20,10 +20,10 @@ debitAccountNumber <br>
 dollarAmountInAccounts<br>
 
 p1: setup api endpoint for user creation ✅
-    setup ios signup page into next view
+    setup ios signup page into next view <br>
 
-p2: setup api endpoint for adding funds
-    setup view for viewing ones account and adding funds
+p2: setup api endpoint for adding funds<br>
+    setup view for viewing ones account and adding funds<br>
     
-p3: setup api endpoint for transfer of funds
-    setup view for transferring funds
+p3: setup api endpoint for transfer of funds<br>
+    setup view for transferring funds<br>
