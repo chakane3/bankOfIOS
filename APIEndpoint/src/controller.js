@@ -28,7 +28,22 @@ const addUser = (req, res) => {
     })
 }
 
+const signIn = (req, res) => {
+    const {email, password} = req.body
+    pool.query(queries.authUser, [email, password], (error, results) => {
+        if (error) throw error
+        let checkCredentials = results.rows[0]["exists"]
+        if (checkCredentials) {
+            res.status(205).send("success")
+        } else {
+            res.status(299).send("wrong username or password")
+        }
+        
+    })
+}
+
 module.exports = {
     getUser,
     addUser,
+    signIn,
 }

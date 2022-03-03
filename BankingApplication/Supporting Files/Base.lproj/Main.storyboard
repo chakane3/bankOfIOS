@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Signup View-->
+        <!--Sign In View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignupView" customModule="BankingApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignInView" customModule="BankingApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,8 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="sign up"/>
                                 <connections>
-                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7V-cr-YbF"/>
-                                    <segue destination="YAa-LY-kEZ" kind="showDetail" id="W2B-JN-LhW"/>
+                                    <segue destination="YAa-LY-kEZ" kind="show" id="xzj-X4-0u8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHL-9d-JU9">
@@ -44,7 +43,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="sign in"/>
                                 <connections>
-                                    <action selector="signinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQS-b1-JjK"/>
+                                    <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bf8-Pf-Ixl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,13 +51,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="enterEmailField" destination="dcf-2R-zSC" id="fbw-8X-G4I"/>
-                        <outlet property="enterPasswordField" destination="ndB-w1-LKJ" id="acr-Kz-Ub8"/>
+                        <outlet property="enterEmail" destination="dcf-2R-zSC" id="dYR-e8-DSj"/>
+                        <outlet property="enterPassword" destination="ndB-w1-LKJ" id="hnW-k4-EZg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="106"/>
+            <point key="canvasLocation" x="813" y="74"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="XRw-ym-77S">
@@ -84,7 +83,7 @@
                                 <rect key="frame" x="90" y="305" width="235" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter password" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="TKo-X2-PHs">
                                 <rect key="frame" x="90" y="365" width="235" height="34"/>
@@ -111,7 +110,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Create Account" titleAlignment="center"/>
                                 <connections>
                                     <action selector="createAccountBtn:" destination="YAa-LY-kEZ" eventType="touchUpInside" id="oMe-4K-M6e"/>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="cr9-au-2CV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-vJ-WoB">
@@ -135,7 +133,7 @@
                     <navigationItem key="navigationItem" id="lv6-sT-h40"/>
                     <connections>
                         <outlet property="confirmPasswordField" destination="DCR-HJ-uwf" id="jHG-eQ-W3K"/>
-                        <outlet property="emailField" destination="v5K-Zs-LKP" id="UJL-dR-wab"/>
+                        <outlet property="emailField" destination="v5K-Zs-LKP" id="mcR-1b-0hl"/>
                         <outlet property="errorMsg" destination="5rG-9m-7CX" id="xHz-Ct-aL1"/>
                         <outlet property="firstNameField" destination="Djp-Mu-9h0" id="j7H-iz-rVY"/>
                         <outlet property="lastNameField" destination="vKh-Mv-a0Z" id="H0a-k4-f1x"/>
