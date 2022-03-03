@@ -3,7 +3,7 @@
 
 # System design 
 - homepage to create a user ✅
-- simple user authentification
+- simple user authentification ✅
 - user should be able to send money to another user
 - user should be able to check their debit account
 - user should be able to add funds to their account 
