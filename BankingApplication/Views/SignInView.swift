@@ -29,6 +29,9 @@ class SignInView: UIViewController {
         }
     }
     
+    // should segue based on outcome of userAuth
+    // if user does not exist, we should show an alert
+    // if the user does exist we should segue into the users account view
     @IBAction func signInBtn(_ sender: Any) {
         // use api endpoint to check if email and password exists in our DB
         
@@ -41,12 +44,12 @@ class SignInView: UIViewController {
             case .failure(let appError):
                 print("either the user entered the wrong credentials or appError occured: \(appError)")
                 
+                
             case .success:
                 
                 // check the response
                 print("login successful")
             }
         }
-        
     }
 }

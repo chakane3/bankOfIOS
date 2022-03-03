@@ -44,7 +44,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="sign in"/>
                                 <connections>
                                     <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bf8-Pf-Ixl"/>
-                                    <segue destination="244-Og-Ebc" kind="show" id="Dm9-ub-jeC"/>
+                                    <segue destination="244-Og-Ebc" kind="show" identifier="login" id="Dm9-ub-jeC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,6 +68,15 @@
                     <view key="view" contentMode="scaleToFill" id="vuz-Zm-6Tu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greeting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohz-SS-X5N">
+                                <rect key="frame" x="20" y="44" width="374" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9YJ-wT-VOR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -75,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2f-2A-lUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="74"/>
+            <point key="canvasLocation" x="1673.913043478261" y="73.660714285714278"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="XRw-ym-77S">
