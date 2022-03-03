@@ -20,7 +20,7 @@
                                 <rect key="frame" x="90" y="289" width="235" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartInsertDeleteType="no" textContentType="new-password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcf-2R-zSC">
                                 <rect key="frame" x="90" y="224" width="235" height="34"/>
@@ -44,12 +44,14 @@
                                 <buttonConfiguration key="configuration" style="filled" title="sign in"/>
                                 <connections>
                                     <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bf8-Pf-Ixl"/>
+                                    <segue destination="244-Og-Ebc" kind="show" id="Dm9-ub-jeC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="p36-hY-ZEV"/>
                     <connections>
                         <outlet property="enterEmail" destination="dcf-2R-zSC" id="dYR-e8-DSj"/>
                         <outlet property="enterPassword" destination="ndB-w1-LKJ" id="hnW-k4-EZg"/>
@@ -58,6 +60,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813" y="74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8sJ-xg-gIx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="244-Og-Ebc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuz-Zm-6Tu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9YJ-wT-VOR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eys-YY-gLM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2f-2A-lUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="74"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="XRw-ym-77S">
@@ -110,6 +128,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Create Account" titleAlignment="center"/>
                                 <connections>
                                     <action selector="createAccountBtn:" destination="YAa-LY-kEZ" eventType="touchUpInside" id="oMe-4K-M6e"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lTA-86-Zlg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-vJ-WoB">

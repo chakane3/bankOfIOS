@@ -34,11 +34,10 @@ const signIn = (req, res) => {
         if (error) throw error
         let checkCredentials = results.rows[0]["exists"]
         if (checkCredentials) {
-            res.status(205).send("success")
+            res.status(201).send("success")
         } else {
-            res.status(299).send("wrong username or password")
+            res.status(401).send("wrong username or password")
         }
-        
     })
 }
 

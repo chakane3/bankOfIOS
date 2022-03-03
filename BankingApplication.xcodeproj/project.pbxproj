@@ -13,6 +13,7 @@
 		9462320327CD9EDA00C82009 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462320227CD9EDA00C82009 /* CreateAccount.swift */; };
 		9462320627CDCA9A00C82009 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462320527CDCA9A00C82009 /* String+Extensions.swift */; };
 		94BC4F2A27D02804008EAB39 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC4F2927D02804008EAB39 /* SignInView.swift */; };
+		94BC4F2C27D16A63008EAB39 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC4F2B27D16A63008EAB39 /* PostRequest.swift */; };
 		94F8CC4F27CAFE69004D5AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */; };
 		94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */; };
 		94F8CC5627CAFE69004D5AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8CC5427CAFE69004D5AD5 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		9462320227CD9EDA00C82009 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		9462320527CDCA9A00C82009 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		94BC4F2927D02804008EAB39 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		94BC4F2B27D16A63008EAB39 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		94F8CC4B27CAFE69004D5AD5 /* BankingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F8CC4E27CAFE69004D5AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F8CC5027CAFE69004D5AD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				946231F727CCDE6000C82009 /* NetworkServices.swift */,
 				946231FC27CCE89000C82009 /* bankAPI.swift */,
+				94BC4F2B27D16A63008EAB39 /* PostRequest.swift */,
 			);
 			path = "Network Services";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				9462320627CDCA9A00C82009 /* String+Extensions.swift in Sources */,
 				9462320327CD9EDA00C82009 /* CreateAccount.swift in Sources */,
 				946231F827CCDE6000C82009 /* NetworkServices.swift in Sources */,
+				94BC4F2C27D16A63008EAB39 /* PostRequest.swift in Sources */,
 				94F8CC5127CAFE69004D5AD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

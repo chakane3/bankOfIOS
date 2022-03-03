@@ -19,9 +19,10 @@ password<br>
 debitAccountNumber <br>
 dollarAmountInAccounts<br>
 
-p1: setup api endpoint for user creation ✅<br>
+p1: setup api endpoint for user creation ✅ <br>
     setup ios signup page back into sign in view ✅ <br>
-    allow a user to sign in <br>
+    allow a user to sign in ✅ <br>
+    segue into view after sucessful login <br>
 
 p2: setup api endpoint for adding funds<br>
     setup view for viewing ones account and adding funds<br>

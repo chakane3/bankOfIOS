@@ -31,5 +31,22 @@ class SignInView: UIViewController {
     
     @IBAction func signInBtn(_ sender: Any) {
         // use api endpoint to check if email and password exists in our DB
+        
+        // create a credential object based on what the user entered
+        let emailAndPswd = CheckUser(email: enterEmail.text ?? "",
+                                     password: enterPassword.text ?? "")
+        
+        bankAPI.userAuth(checkUser: emailAndPswd) { (result) in
+            switch result {
+            case .failure(let appError):
+                print("either the user entered the wrong credentials or appError occured: \(appError)")
+                
+            case .success:
+                
+                // check the response
+                print("login successful")
+            }
+        }
+        
     }
 }
