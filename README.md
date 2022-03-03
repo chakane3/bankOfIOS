@@ -19,12 +19,8 @@ password<br>
 debitAccountNumber <br>
 dollarAmountInAccounts<br>
 
-<<<<<<< HEAD
-p1: setup api endpoint for user creation ✅ <br>
-=======
 p1: setup api endpoint for user creation ✅<br>
     setup api endpoint for user sign-in  ✅<br>
->>>>>>> 20174e2d24dcf9b67e8f9fe6cccbac160d3331c1
     setup ios signup page back into sign in view ✅ <br>
     allow a user to sign in ✅ <br>
     segue into view after sucessful login <br>
